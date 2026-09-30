@@ -16,20 +16,19 @@ android {
         versionName "1.0.0"
 
         ndk {
-            abiFilters "arm64-v8a", "armeabi-v7a"
+            abiFilters "arm64-v8a"
         }
 
         python {
             buildPython "python3"
             pip {
-                // ===== TELEGRAM LIBRARIES =====
+                // ===== TELEGRAM =====
                 install "python-telegram-bot==20.7"
                 install "pyrogram==2.0.106"
                 install "telethon==1.34.0"
                 install "aiogram==3.4.1"
-                install "telebot==0.0.5"
 
-                // ===== HTTP & API =====
+                // ===== HTTP =====
                 install "requests==2.31.0"
                 install "httpx==0.26.0"
                 install "aiohttp==3.9.1"
@@ -47,30 +46,19 @@ android {
                 install "sqlalchemy==2.0.25"
                 install "aiosqlite==0.19.0"
 
-                // ===== UTILITIES =====
+                // ===== UTILS (pure Python only) =====
                 install "python-dotenv==1.0.0"
                 install "pytz==2023.3"
                 install "colorama==0.4.6"
-                install "pillow==10.2.0"
                 install "psutil==5.9.8"
-                install "beautifulsoup4==4.12.3"
-                install "lxml==5.1.0"
-
-                // ===== JSON & DATA =====
+                install "loguru==0.7.2"
                 install "orjson==3.9.12"
                 install "ujson==5.9.0"
-                install "pandas==2.1.4"
-                install "numpy==1.26.3"
+                install "websockets==12.0"
 
-                // ===== LOGGING =====
-                install "loguru==0.7.2"
-                install "rich==13.7.0"
-
-                // ===== FREE FIRE / GAMING =====
-                install "protobuf==4.25.2"
+                // ===== CRYPTO =====
                 install "cryptography==42.0.2"
                 install "pycryptodome==3.20.0"
-                install "websockets==12.0"
             }
         }
     }
