@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#121212"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="🤖 TeleBot Host"
+        android:textColor="#FFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView android:id="@+id/tvBotPath"
+        android:text="Koi bot nahi"
+        android:textColor="#B0B0B0"
+        android:padding="8dp"
+        android:background="#1A1A1A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView android:id="@+id/tvStatus"
+        android:text="Ready"
+        android:textColor="#4CAF50"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button android:id="@+id/btnNewBot"
+        android:text="➕ Naya Bot Banao"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFF"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button android:id="@+id/btnOpenEditor"
+        android:text="📝 Bot Edit Karo"
+        android:backgroundTint="#9C27B0"
+        android:textColor="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button android:id="@+id/btnInstallLibs"
+        android:text="📦 Libraries Install Karo"
+        android:backgroundTint="#FF9800"
+        android:textColor="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button android:id="@+id/btnStartBot"
+            android:text="▶️ START"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFF"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <Button android:id="@+id/btnStopBot"
+            android:text="⏹️ STOP"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFF"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button android:id="@+id/btnViewLog"
+            android:text="📜 Live Log"
+            android:backgroundTint="#00BCD4"
+            android:textColor="#FFF"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <Button android:id="@+id/btnClearLog"
+            android:text="🗑️ Clear"
+            android:backgroundTint="#607D8B"
+            android:textColor="#FFF"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

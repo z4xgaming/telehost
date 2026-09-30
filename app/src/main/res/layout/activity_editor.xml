@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#1E1E1E"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="6dp"
+        android:background="#252526"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button android:id="@+id/btnSave"
+            android:text="💾 Save"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFF"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <Button android:id="@+id/btnClose"
+            android:text="❌ Close"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFF"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <EditText android:id="@+id/editor"
+        android:gravity="top|start"
+        android:inputType="textMultiLine"
+        android:fontFamily="monospace"
+        android:textColor="#FFF"
+        android:background="#1E1E1E"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
